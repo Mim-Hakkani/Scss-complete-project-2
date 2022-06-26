@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+// declare the primary section 
+
+$primary-font: 'Lato', sans-serif;
+$primary-color:rgb(2, 2, 68);
+$secondaty-color:#fff;
+
+
+
+
+body{
+    font-size: 16px;
+    line-height: 22px;  
+    font-family: $primary-font;
+}
+
+//mixin
+
+@mixin shared-buttton {
+    background-color: #fff;
+    color: #818181;
+    padding: 8px 18px;
+    border-radius: 10px;
+    border: 0px;
+    // width: 25%;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.custom-shape-divider-bottom-1656234248 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1656234248 svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 260px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1656234248 .shape-fill {
+    fill: #E7E7EC;
+}
+
+.header-section{
+    background-color: rgb(2, 2, 68);
+    height:600px;
+    padding: 15px;
+    position: relative;
+    .top-header {
+    
+        display: flex;
+        justify-content: space-between;
+        color: $secondaty-color;
+        margin-top: 15px;
+        p{
+            font-size: 30px;
+            margin-left: 15px;
+        }
+
+        .sidenav {
+        height: 50%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+
+        a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        &:hover{
+        color: #f1f1f1;
+        }
+        }
+
+        .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+        }
+
+
+
+        #main {
+        transition: margin-left .5s;
+        padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+
+    }
+    .header-body{
+        position: absolute;
+        top: 27%;
+        left: 30%;
+        text-transform: uppercase;
+        color: $secondaty-color;
+      
+
+        h2{
+            letter-spacing: 20px;
+            line-height: 60px;
+            font-size: 45px;
+
+        }
+        p{
+            letter-spacing: 7px;
+            font-size: 14px;
+            // border: 1px solid salmon;
+            text-align: center;
+            margin-top: 10px;
+            
+        }
+
+        button{
+            @include shared-buttton();
+            margin: 15px auto;
+            text-align: center;
+            display: block;
+           
+
+        }
+    }
+
+}
+
