@@ -131,4 +131,31 @@ body {
 }
 .all-common-header:hover {
   transform: skew(-20deg) rotate(2deg);
+}
+
+.grid-section-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  height: 200px;
+}
+
+.grid-section-area .grid-left-area .grid-common-text-style {
+  padding: 15px 20px;
+}
+.grid-section-area .grid-left-area .grid-common-text-style p {
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  width: 80%;
+  text-align: justify;
+  margin-top: 10px;
+}
+.grid-section-area .grid-left-area span {
+  text-decoration: underline;
+  font-family: "Lato", sans-serif;
+  padding: 8px 0px;
+  margin-left: 5px;
+}
+.grid-section-area .grid-right-area {
+  background-color: greenyellow;
 }/*# sourceMappingURL=style.css.map */
