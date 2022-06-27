@@ -165,7 +165,7 @@ body{
     // border: 1px solid salmon;
 
     &:hover{
-      transform: skew(-20deg) rotate(2deg);
+      transform: skew(-10deg) rotate(1deg);
     }
 }
 %TwoColumnLayout {
@@ -197,10 +197,121 @@ body{
              font-family: $primary-font;
              padding:8px 0px;
              margin-left: 5px;
+             
         }
  }
  .grid-right-area{
-    background-color: greenyellow;
+    // background-color: greenyellow;
+    position: relative;
+    img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .img1{
+    position: absolute;
+    width: 200px;
+    transform: skewX(8deg);
+    top: 15px;
+    left: 25px;
+    transition: 0.5s ease-in-out;
+
+    &:hover{
+        z-index: 5;
+        transform: scale(1.2);
+    }
+    }
+    .img2{
+    position: absolute;
+    top: 70px;
+    left: 146px;
+    z-index: 1;
+    width: 221px;
+    transform: skew(9deg, -12deg);
+    transition: 0.5s ease-in-out;
+
+      &:hover{
+        z-index: 5;
+        transform: scale(1.1);
+
+    }
+    }
+    .img3{
+    position: absolute;
+    left: 312px;
+    top: 25px;
+    transform: skewY(5deg);
+    width: 221px;
+    transition: 0.5s ease-in-out;
+      &:hover{
+        z-index: 5;
+        transform: scale(1.09);
+
+    }
+    }
  }
 
 }
+
+
+/* services section websites */
+
+.services-section{
+    background-color: rgb(7, 7, 88);
+    height: 350px;
+    clip-path: polygon(46% 0, 80% 0%, 100% 0, 100% 74%, 82% 81%, 25% 100%, 0 100%, 0 12%);
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+
+
+   .card-area{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   width: 75%;
+
+    .card{
+
+   background-color: #E7E7EC;
+   flex-basis: 200px;
+   height: 150px;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 1px 2px 0px rgb(180, 176, 176);
+   transition: 0.7s ease-in;
+
+   &:hover{
+    transform: scale(1.06);
+   }
+
+   //h4 section 
+
+   h4{
+
+    text-align: center;
+    padding: 5px 0px;
+     color: #868383
+   }
+
+   p{
+    font-size: 14px;
+    color: #868383
+   }
+
+   }
+
+
+   }
+
+
+  
+}
+
+
+
+
+
