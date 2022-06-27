@@ -8,3 +8,14 @@
 * css and css3
 * Shape generator from shape
 * Note : Not responsive 
+
+
+<br/>
+<!-- ************************************************************************ -->
+
+* There are Five thinks in scss
+* Variable in Scss 
+* Import are exits in Scss 
+* @mixin and @include in Scss 
+* @extends in scss ...
+* Nesting in scss is very interesting .... 
