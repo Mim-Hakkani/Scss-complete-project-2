@@ -407,5 +407,58 @@ body{
 }
 
 
+//single item is here 
+
+.description-item{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 100px;
+    position: relative;
+
+    background-image: linear-gradient(to bottom, rgb(71 75 205 / 82%) 0%, #3dbbcf 100%), url(/images/bgc.gif); 
+
+
+    .description-desc{
+        background-color: #fff;
+        height: 140px;
+        width: 450px;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        transform: skewX(-10deg);
+
+        .description-title{
+            display: flex;
+            gap: 7px;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+            
+        }
+    }
+
+      .description-desc2{
+        background-color: #fff;
+        height: 140px;
+        width: 450px;
+        position: absolute;
+        top: 60%;
+        left: 27%;
+        transform: skewX(-10deg);
+
+        .description-title{
+            display: flex;
+            gap: 7px;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+            
+        }
+    }
+}
+
+
 
 
