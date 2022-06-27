@@ -7,4 +7,4 @@
 * Html and Html 5
 * css and css3
 * Shape generator from shape
-* 
+* Note : Not responsive 
