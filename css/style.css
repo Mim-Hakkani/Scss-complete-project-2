@@ -367,7 +367,7 @@ body {
   width: 450px;
   position: absolute;
   top: 60%;
-  left: 27%;
+  left: 32%;
   transform: skewX(-10deg);
 }
 .description-item .description-desc2 .description-title {
@@ -376,4 +376,35 @@ body {
   justify-content: center;
   align-items: center;
   height: 90%;
+}
+
+.newslater {
+  display: flex;
+  position: relative;
+}
+.newslater .newslatebgc {
+  -webkit-clip-path: polygon(0 0, 80% 0%, 95% 0, 96% 0, 64% 98%, 0 100%, 0% 80%, 0 1%);
+          clip-path: polygon(0 0, 80% 0%, 95% 0, 96% 0, 64% 98%, 0 100%, 0% 80%, 0 1%);
+  background-color: #fff;
+  height: 328px;
+  width: 60%;
+  z-index: 1;
+}
+.newslater .newslateimg {
+  background-image: url("/images/newslater.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  left: 39%;
+}
+
+input {
+  padding: 8px;
+  outline: 1px solid transparent;
+  width: 50%;
+  border: 1px solid #e7e7e7;
+  margin-top: 12px;
+  margin-left: 58px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
